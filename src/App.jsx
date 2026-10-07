@@ -7,7 +7,7 @@ const App = () => {
   const [parques, setParques] = useState([]);
   useEffect(() => {
 
-    fetch('http://www.ies-azarquiel.es/paco/apiparques/parques')
+    fetch('https://pacopul.github.io/json/pn/parques.json')
       .then((response) => response.json())
       .then((data) => {
         console.log(data.parques);
